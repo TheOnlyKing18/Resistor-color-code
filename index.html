@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistor Color Code Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Resistor Color Code Calculator</h1>
+        <p>Select the colors of the resistor bands to find its resistance value.</p>
+    </header>
+
+    <main>
+        <div class="resistor">
+            <label>Band 1:</label>
+            <select id="band1" onchange="calculateResistance()">
+                <option value="">Select</option>
+            </select>
+
+            <label>Band 2:</label>
+            <select id="band2" onchange="calculateResistance()">
+                <option value="">Select</option>
+            </select>
+
+            <label>Multiplier:</label>
+            <select id="multiplier" onchange="calculateResistance()">
+                <option value="">Select</option>
+            </select>
+
+            <label>Tolerance:</label>
+            <select id="tolerance" onchange="calculateResistance()">
+                <option value="">Select</option>
+            </select>
+        </div>
+
+        <div class="output">
+            <h2 id="result">Resistance = —</h2>
+        </div>
+
+        <section class="help">
+            <h3>Color Code Chart</h3>
+            <table>
+                <tr><th>Color</th><th>Digit</th><th>Multiplier</th><th>Tolerance</th></tr>
+                <tr><td>Black</td><td>0</td><td>×1</td><td>—</td></tr>
+                <tr><td>Brown</td><td>1</td><td>×10</td><td>±1%</td></tr>
+                <tr><td>Red</td><td>2</td><td>×100</td><td>±2%</td></tr>
+                <tr><td>Orange</td><td>3</td><td>×1k</td><td>—</td></tr>
+                <tr><td>Yellow</td><td>4</td><td>×10k</td><td>—</td></tr>
+                <tr><td>Green</td><td>5</td><td>×100k</td><td>±0.5%</td></tr>
+                <tr><td>Blue</td><td>6</td><td>×1M</td><td>±0.25%</td></tr>
+                <tr><td>Violet</td><td>7</td><td>×10M</td><td>±0.1%</td></tr>
+                <tr><td>Gray</td><td>8</td><td>×100M</td><td>±0.05%</td></tr>
+                <tr><td>White</td><td>9</td><td>—</td><td>—</td></tr>
+                <tr><td>Gold</td><td>—</td><td>×0.1</td><td>±5%</td></tr>
+                <tr><td>Silver</td><td>—</td><td>×0.01</td><td>±10%</td></tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by Aman</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

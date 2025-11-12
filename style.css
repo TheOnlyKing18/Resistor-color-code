@@ -1,0 +1,55 @@
+body {
+    font-family: 'Lora', serif;
+    background: #f9f9f9;
+    color: #222;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #3a3a7a;
+    color: white;
+    padding: 20px;
+}
+
+.resistor {
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.output h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #2c2c2c;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+}
+
+th {
+    background-color: #eee;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    padding: 10px;
+    margin-top: 40px;
+}
